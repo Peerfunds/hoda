@@ -7,6 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class WebController {
 	@GetMapping(value="/")
     public String homepage(){
+        return "index1";
+    }
+	@GetMapping(value="register")
+    public String userRegister(){
         return "register";
+    }
+	@GetMapping(value="login")
+    public String login(){
+        return "login";
     }
 }
