@@ -23,8 +23,6 @@
 <link href="assets/css/vendors.css" rel="stylesheet" />
 <link href="assets/css/icon_fonts/css/all_icons.min.css"
 	rel="stylesheet" />
-
-<script src="/js/postregisterJqueryAjax.js"></script>
 </head>
 
 <body id="register_bg">
@@ -44,7 +42,6 @@
 			</figure>
 			<form autocomplete="off">
 				<div class="form-group">
-
 					<span class="input"> <input class="input_field" type="text" />
 						<label class="input_label"> <span
 							class="input__label-content"> Name</span>
@@ -73,15 +70,12 @@
 						id="acc_name" /> <label class="input_label"> <span
 							class="input__label-content">Account Holder Name</span>
 					</label>
-					</span> <span class="input"> <input class="input_field"
-						type="password" id="password1" /> <label class="input_label">
-							<span class="input__label-content">Password</span>
-					</label>
-					</span> <span class="input"> <input class="input_field"
+					</span>
+					<!-- <span class="input"> <input class="input_field"
 						type="password" id="password2" /> <label class="input_label">
 							<span class="input__label-content">Confirm password</span>
 					</label>
-					</span>
+					</span> -->
 					<!-- <span class="input"> <input class="input_field"
 						type="text" id="acc_name" /> <label class="input_label">
 							<span class="input__label-content">Account Holder Name</span>
@@ -113,19 +107,29 @@
 						id="answer" /> <label class="input_label"> <span
 							class="input__label-content">Answer</span>
 					</label>
-					</span> <span class="input"> <input type="checkbox" /> <label>
+					</span> <span class="input"> <input class="input_field"
+						type="password" id="password1" /> <label class="input_label">
+							<span class="input__label-content">Password</span>
+					</label>
+					</span><span class="input"> <input class="input_field" type="text"
+						id="reference" /> <label class="input_label"> <span
+							class="input__label-content">Referred By </span>
+					</label>
+					</span><span class="input"> <input type="checkbox" /> <label>
 							<span>I agree to the <a href="javascript:;">terms</a></span>
 					</label>
 					</span>
 					<div id="pass-info" class="clearfix"></div>
 				</div>
-				<a href="#0" class="btn_1 rounded full-width add_top_30">Join
-					Now</a>
+				<!-- <a href="#0" class="btn_1 rounded full-width add_top_30">Join
+					Now</a> -->
+				<button type="submit" class="btn btn-primary">Submit</button>
 				<div class="text-center add_top_10">
 					Already have an acccount? <strong><a href="login.html">Sign
 							In</a></strong>
 				</div>
 			</form>
+			<div id="postResultMsg" style="margin-top: 20px"></div>
 		</aside>
 	</div>
 	<!-- /login -->
@@ -138,6 +142,7 @@
 
 	<!-- SPECIFIC SCRIPTS -->
 	<script src="assets/js/pw_strength.js"></script>
+	<script src="/js/postregisterJqueryAjax.js"></script>
 
 </body>
 </html>
