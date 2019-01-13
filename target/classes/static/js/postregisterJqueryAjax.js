@@ -8,6 +8,7 @@ $(document)
 						event.preventDefault();
 
 						var inputs = $(this).find('input');
+						console.log("javascript function called"+inputs);
 
 						// prepare data from input-form
 						var data = {
@@ -48,7 +49,7 @@ $(document)
 								.ajax({
 									type : "POST",
 									contentType : "application/json",
-									url : window.location + "rest/user/add",
+									url :  "http://localhost:8080/rest/user/add",
 									data : JSON.stringify(data),
 									dataType : 'text',
 									success : function(result) {
