@@ -39,7 +39,7 @@ public class UserServicesController {
 	public List<User> add(@RequestBody final User user) {
 		System.out.println("adduser called:"+user);
 		userRepository.save(user);
-		return getNameBymobile(user.getName());
+		return getNameBymobile(user.getMobile());
 	}
 
 	@PostMapping("/login")

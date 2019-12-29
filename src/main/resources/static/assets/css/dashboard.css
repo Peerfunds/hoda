@@ -1,0 +1,432 @@
+
+/*=============================================
+ Table Of Contents
+ 1.) Eric Meyer's Reset
+ 2.) Global Typography
+ 2.0.1) Font Face
+ 2.0.2) Global Headings
+ 2.0.3) General Text Formatting
+ 2.0.4) Global Link style
+ 2.0.5) Global Button Styles
+ 2.0.6) Global Sprite Icons and Clearfix style
+ 3.) Global Site Wide Content
+ 4.) Header Style
+ 5.) Footer Style
+ ===============================================*/
+/* 1.) Eric Meyer's Reset ---------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* 2.) Global Typography ---------------------------------------------*/
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #504f4f;
+  font-size: 14px;
+  line-height: 1.1;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 72px; }
+
+.validate {
+  padding-bottom: 30px; }
+
+/* 2.0.1) Font Face ---------------------------------------------*/
+/* Put Your font face Styles here---------------------------------------------*/
+/* 2.0.2) Global Headings ---------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  /*
+   font-weight: normal;
+   color: #161e21;*/ }
+
+h1 {
+  color: #494949;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 1px; }
+
+h1 a {
+  color: #494949; }
+
+h2 {
+  color: #494949;
+  font-size: 20px;
+  text-transform: capitalize;
+  letter-spacing: 1px; }
+
+h3 {
+  color: #696868;
+  font-weight: 500;
+  font-size: 18px; }
+
+h4 {
+  color: #707070;
+  font-size: 16px;
+  font-weight: 400; }
+
+/* 2.0.3) General Text Formatting ---------------------------------------------*/
+p {
+  line-height: 1.5; }
+
+blockquote, cite, q, var, dfn {
+  font-style: italic; }
+
+small {
+  font-size: 85.71429%;
+  line-height: 1.75; }
+
+/* 2.0.4) Global Link style ---------------------------------------------*/
+a {
+  color: #504f4f;
+  text-decoration: none; }
+
+a:hover, a:focus, a:visited, input, select, textarea {
+  outline: none;
+  text-decoration: none;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+input[type=text]::-ms-clear {
+  display: none; }
+
+textarea {
+  overflow: auto;
+  font-family: "Roboto", sans-serif; }
+
+/* 2.0.5) Global Button Styles ---------------------------------------------*/
+
+
+/* 2.0.6) Global Sprite Icons and Clearfix style ---------------------------------------------*/
+/*[class^="icon-"], [class*="icon-"] {
+ background-image: url(../images/sprite.png);
+ background-position: 0 0;
+ background-repeat: no-repeat;
+ display: inline-block;
+ height: 15px;
+ vertical-align: text-top;
+ width: 15px;
+ }*/
+/* Clear Floated Elements by use Clearfix class---------------------------------------------*/
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.clearfix {
+  display: block; }
+
+/* 3.) Global Site Wide Content ---------------------------------------------*/
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+/* ------------------  Code for UI Tools Removed this section from your project --------------------------- */
+.container {
+  max-width: 100%; }
+
+.btn{
+  margin:0 2px 10px;
+  cursor: pointer;
+}
+figure img {
+  width: 100%;
+  display: block; }
+
+* {
+  box-sizing: border-box; }
+
+label {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #707070;
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 6px;
+  font-weight: 500;
+  letter-spacing: .7px;
+  position: relative; }
+
+input[type="text"], select, input[type="password"], input[type="email"], input[type="reset"] {
+  width: 100%;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #5e5e5e;
+  height: 37px;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-weight: 300;
+  box-shadow: 0px 2px 3px 0px #e0dcdc;
+  border: 1px solid #f5f5f5; }
+
+input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  padding: 7px 100px 12px;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  border: #bebdbd solid 0.7px; }
+
+::placeholder {
+  font-size: 18px;
+  color: #5e5e5e;
+  font-family: "Roboto", sans-serif;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 18px;
+  color: #5e5e5e;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-size: 18px;
+  color: #5e5e5e;
+  text-transform: capitalize;
+  font-family: "Roboto", sans-serif; }
+
+.main-content, .compass-group, .certification-process, .logout-wrap, .vendor-profile, .aven, .aven300, .vendors, .contact, .assessment-cont, .assess-con, .assessment-form, .assessment-form-one, .stream-cont {
+  padding: 24px 75px 0 80px;
+  float: right;
+  width: 83.7%; }
+
+/* 4.) aside Styles ---------------------------------------------*/
+.side-bar.side-view {
+  left: 0; }
+
+.nav-view, .side-menu li a {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #4f4f51;
+  padding: 27px 45px 32px;
+  line-height: 16px; }
+
+.sidebar-toggle {
+  cursor: pointer;
+  width: 30px;
+  position: absolute;
+  left: 100%;
+  top: 20px;
+  margin-left: 20px;
+  display: none;
+  transition: all ease 0.5s 0s;
+  z-index: 2; }
+  .sidebar-toggle span {
+    display: block;
+    height: 5px;
+    margin-bottom: 4px;
+    transition: all ease 0.5s 0s;
+    background-color: #504f4f;
+    border-radius: 3px; }
+
+.side-bar {
+  transition: all ease 0.5s 0s;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #4f4f51;
+  width: 16.3%;
+  padding: 28px 0 0 0; }
+  .side-bar .logo {
+    display: inline-block;
+    margin-left: 28px;
+    margin-bottom: 27px; }
+
+.side-bar.side-view .sidebar-toggle .bar-2 {
+  opacity: 0; }
+.side-bar.side-view .sidebar-toggle .bar-1 {
+  -webkit-transform: rotate(-45deg) translate(-7px, 7px);
+  transform: rotate(-45deg) translate(-7px, 7px); }
+.side-bar.side-view .sidebar-toggle .bar-3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+  transform: rotate(45deg) translate(-6px, -6px); }
+
+.side-menu li a {
+  transition: all ease 0.5s 0s; }
+  .side-menu li a:hover {
+    background-color: #5f5f5f; }
+    .side-menu li a:hover:before {
+      opacity: 1; }
+
+  .side-menu li a:before {
+    transition: all ease 0.5s 0s;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 9px;
+    background-color: #f3af06;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2) inset;
+    opacity: 0; }
+.side-menu li.active a {
+  background-color: #5f5f5f; }
+  .side-menu li.active a:before {
+    opacity: 1; }
+
+
+/* 5.) Footer Styles ---------------------------------------------*/
+
+.dashboard-content {
+  padding: 29px 91px 0 81px; }
+
+.page-title {
+  float: left;
+  padding-top: 33px; }
+
+
+
+.pending-approval {
+  padding-top: 58px; }
+
+.approval {
+  margin: 0 -18.5px; }
+  .approval li {
+    float: left;
+    width: 33.33%;
+    padding: 0 18.5px; }
+    .approval li .approval-info {
+      background-color: #f0f0f0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      min-height: 134px;
+      border: 1px solid #cbd3dc;
+      border-radius: 5px;
+      padding: 18px;
+      font-weight: 300;
+      margin-bottom: 30px;
+      box-shadow: 0px 2px 5px 0px #d2d7db;
+      word-break: keep-all; }
+
+
+
+@media all and (max-width: 1439px) {
+
+  .side-bar {
+    width: 19.3%; }
+
+  .main-content{
+    width: 80.7%;
+    padding: 29px 50px 0 50px; }
+
+   }
+@media all and (max-width: 1239px) {
+  .side-bar .logo {
+    margin-left: 39px; }
+
+  .nav-view, .side-menu li a {
+    padding: 27px 23px 32px; }
+
+  .dashboard-content {
+    padding: 29px 20px 0 20px; }
+ }
+@media all and (max-width: 991px) {
+  .side-bar {
+    left: -191.25px;
+    width: 191.25px; }
+
+  .sidebar-toggle {
+    display: block; }
+
+  .main-content{
+    width: 100%;
+    padding: 29px 0 0 0; }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px; }
+
+  .approval {
+    margin: 0 -13.5px; }
+    .approval li {
+      padding: 0 13.5px; }
+
+ }
+@media all and (max-width: 767px) {
+  .pending-approval {
+    padding-top: 31px; }
+
+  .page-title {
+    float: none; }
+
+
+  h2 {
+    letter-spacing: .5px; }
+
+  .dashboard-content {
+    padding: 29px 0px 0 0px; }
+
+  .approval li {
+    width: 100%;
+    margin-bottom: 20px; }
+
+   }
+   
+
+/*# sourceMappingURL=style.css.map */
